@@ -1,0 +1,23 @@
+{
+  "name": "MySQL",
+  "version": "0.1.0",
+  "description": "Connect to MySQL",
+  "mcpServers": {
+    "PostgreSQL": {
+      "command": "${extensionPath}${/}toolbox",
+      "args": [
+        "--prebuilt",
+        "mysql",
+        "--stdio"
+      ],
+      "env": {
+        "MYSQL_HOST": "${MYSQL_HOST}",
+        "MYSQL_PORT": "${MYSQL_PORT}",
+        "MYSQL_DATABASE": "${MYSQL_DATABASE}",
+        "MYSQL_USER": "${MYSQL_USER}",
+        "MYSQL_PASSWORD": "${MYSQL_PASSWORD}"
+      }
+    }
+  },
+  "contextFileName": "MYSQL.md"
+}
