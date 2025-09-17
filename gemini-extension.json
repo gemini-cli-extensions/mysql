@@ -1,7 +1,7 @@
 {
   "name": "mysql",
   "version": "0.1.0",
-  "description": "Connect to MySQL",
+  "description": "Connect and interact with a MySQL database and data",
   "mcpServers": {
     "PostgreSQL": {
       "command": "${extensionPath}${/}toolbox",
