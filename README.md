@@ -5,7 +5,7 @@ This Gemini CLI extension provides a set of tools to interact with [MySQL](https
 ## Why Use the MySQL Extension?
 
 * **Natural Language Management:** Stop wrestling with complex commands. Explore schemas and query data by describing what you want in plain English.
-* **Seamless Workflow:** As a Google-developed extension, it integrates seamlessly into the Gemini CLI environment, making security an accessible part of your workflow. No need to constantly switch contexts for common database tasks.
+* **Seamless Workflow:** As a Google-developed extension, it integrates seamlessly into the Gemini CLI environment. No need to constantly switch contexts for common database tasks.
 * **Code Generation:** Accelerate development by asking Gemini to generate data classes and other code snippets based on your table schemas.
 
 ## Prerequisites
