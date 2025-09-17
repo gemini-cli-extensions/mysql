@@ -4,10 +4,9 @@ This Gemini CLI extension provides a set of tools to interact with [MySQL](https
 
 ## Why Use the MySQL Extension?
 
-* **Integrated with Gemini CLI:** As a Google-developed extension, it integrates seamlessly into the Gemini CLI environment, making security an accessible part of your workflow.
-* **Connect to MySQL:** Securely connect to your MySQL instances.
-* **Explore Database Schema:** List databases, tables, views, and schemas.
-* **Query your Database:** Execute SQL queries against your database.
+* **Natural Language Management:** Stop wrestling with complex commands. Explore schemas and query data by describing what you want in plain English.
+* **Seamless Workflow:** As a Google-developed extension, it integrates seamlessly into the Gemini CLI environment, making security an accessible part of your workflow. No need to constantly switch contexts for common database tasks.
+* **Code Generation:** Accelerate development by asking Gemini to generate data classes and other code snippets based on your table schemas.
 
 ## Prerequisites
 
@@ -15,6 +14,7 @@ Before you begin, ensure you have the following:
 
 * [Gemini CLI](https://github.com/google-gemini/gemini-cli) installed.
 * A running MySQL instance.
+* A user with database-level permissions to execute queries.
 
 ## Installation
 
@@ -26,16 +26,29 @@ gemini extensions install github.com/gemini-cli-extensions/mysql
 
 ## Configuration
 
+Set the following environment variables before starting the Gemini CLI:
+
 * `MYSQL_HOST`: The hostname or IP address of the MySQL server.
 * `MYSQL_PORT`: The port number of the MySQL server.
 * `MYSQL_DATABASE`: The name of the database to connect to.
 * `MYSQL_USER`: The username for authentication.
 * `MYSQL_PASSWORD`: The password for authentication.
 
+## Usage Examples
+
+Interact with MySQL using natural language right from your IDE:
+
+* **Explore Schemas and Data:**
+  * "Show me all tables in the 'orders' database."
+  * "What are the columns in the 'products' table?"
+  * "How many orders were placed in the last 30 days, and what were the top 5 most purchased items?"
+* **Generate Code:**
+  * "Generate a Python dataclass to represent the 'customers' table."
+
 ## Supported Tools
 
-* `list_tables`
-* `execute_sql`
+* `list_tables`: lists schema information for all or specified tables in a MySQL database.
+* `execute_sql`: executes a SQL statement against a MySQL database.
 
 ## Additional Extensions
 
