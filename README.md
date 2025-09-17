@@ -4,10 +4,10 @@ This Gemini CLI extension provides a set of tools to interact with [MySQL](https
 
 ## Features
 
-*   **Integrated with Gemini CLI:** As a Google-developed extension, it integrates seamlessly into the Gemini CLI environment, making security an accessible part of your workflow.
-*   **Connect to MySQL:** Securely connect to your MySQL instances.
-*   **Explore Database Schema:** List databases, tables, views, and schemas.
-*   **Query your Database:** Execute SQL queries against your database.
+* **Integrated with Gemini CLI:** As a Google-developed extension, it integrates seamlessly into the Gemini CLI environment, making security an accessible part of your workflow.
+* **Connect to MySQL:** Securely connect to your MySQL instances.
+* **Explore Database Schema:** List databases, tables, views, and schemas.
+* **Query your Database:** Execute SQL queries against your database.
 
 ## Supported Tools
 
@@ -18,8 +18,8 @@ This Gemini CLI extension provides a set of tools to interact with [MySQL](https
 
 Before you begin, ensure you have the following:
 
-*   [Gemini CLI](https://github.com/google-gemini/gemini-cli) installed.
-*   A running MySQL instance.
+* [Gemini CLI](https://github.com/google-gemini/gemini-cli) installed.
+* A running MySQL instance.
 
 ## Installation
 
@@ -31,18 +31,16 @@ gemini extensions install github.com/gemini-cli-extensions/mysql.git
 
 ## Configuration
 
-*   `MYSQL_HOST`: The hostname or IP address of the MySQL server.
-*   `MYSQL_PORT`: The port number of the MySQL server.
-*   `MYSQL_DATABASE`: The name of the database to connect to.
-*   `MYSQL_USER`: The username for authentication.
-*   `MYSQL_PASSWORD`: The password for authentication.
-
+* `MYSQL_HOST`: The hostname or IP address of the MySQL server.
+* `MYSQL_PORT`: The port number of the MySQL server.
+* `MYSQL_DATABASE`: The name of the database to connect to.
+* `MYSQL_USER`: The username for authentication.
+* `MYSQL_PASSWORD`: The password for authentication.
 
 ## Usage
 
 * Explore Schemas and Data
 * Generate code
-
 
 ## Security
 

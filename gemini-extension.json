@@ -1,5 +1,5 @@
 {
-  "name": "MySQL",
+  "name": "mysql",
   "version": "0.1.0",
   "description": "Connect to MySQL",
   "mcpServers": {
