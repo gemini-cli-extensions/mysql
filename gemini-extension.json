@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Connect and interact with a MySQL database and data",
   "mcpServers": {
-    "PostgreSQL": {
+    "MySQL": {
       "command": "${extensionPath}${/}toolbox",
       "args": [
         "--prebuilt",
