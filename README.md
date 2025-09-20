@@ -1,5 +1,8 @@
 # Gemini CLI Extension - MySQL
 
+> [!NOTE]
+> This extension is currently in beta, and may see breaking changes until the first stable release (v1.0).
+
 This Gemini CLI extension provides a set of tools to interact with [MySQL](https://dev.mysql.com/doc/) instances. It allows you to manage your databases, execute queries, and explore schemas directly from the [Gemini CLI](https://google-gemini.github.io/gemini-cli/), using natural language prompts.
 
 ## Why Use the MySQL Extension?
@@ -12,7 +15,7 @@ This Gemini CLI extension provides a set of tools to interact with [MySQL](https
 
 Before you begin, ensure you have the following:
 
-* [Gemini CLI](https://github.com/google-gemini/gemini-cli) installed.
+* [Gemini CLI](https://github.com/google-gemini/gemini-cli) installed with version +v0.6.0.
 * A running MySQL instance.
 * A user with database-level permissions to execute queries.
 
