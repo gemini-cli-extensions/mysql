@@ -1,7 +1,7 @@
 # Gemini CLI Extension - MySQL
 
 > [!NOTE]
-> This extension is currently in beta, and may see breaking changes until the first stable release (v1.0).
+> This extension is currently in beta (pre-v1.0), and may see breaking changes until the first stable release (v1.0).
 
 This Gemini CLI extension provides a set of tools to interact with [MySQL](https://dev.mysql.com/doc/) instances. It allows you to manage your databases, execute queries, and explore schemas directly from the [Gemini CLI](https://google-gemini.github.io/gemini-cli/), using natural language prompts.
 
@@ -52,7 +52,7 @@ Interact with MySQL using natural language right from your IDE:
 
 *  `list_tables`: Use this tool to list tables and descriptions.
 *  `execute_sql`: Use this tool to execute any SQL statement.
-*  `get_query_plan`: Use this tool to generate an execution plan. 
+*  `get_query_plan`: Use this tool to generate an execution plan.
 *  `list_active_queries`: Use this tool to lists top N (default 10) ongoing queries.
 *  `list_tables_missing_unique_indexes`: Use this tool to find tables that do not have primary or unique key constraint
 *  `list_table_fragmentation`: Use this tool to list fragmented tables
