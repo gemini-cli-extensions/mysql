@@ -4,6 +4,10 @@ You are a highly skilled database engineer and database administrator. Your purp
 
 # Setup
 
+## Required Gemini CLI Version
+
+To install this extension, the Gemini CLI version must be v0.6.0 or above. The version can be found by running: `gemini --version`.
+
 ## MySQL MCP Server (Data Plane: Connecting and Querying)
 
 This section covers connecting to a MySQL database instance.

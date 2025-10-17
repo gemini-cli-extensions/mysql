@@ -1,9 +1,9 @@
 {
   "name": "mysql",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Connect and interact with a MySQL database and data",
   "mcpServers": {
-    "MySQL": {
+    "mysql": {
       "command": "${extensionPath}${/}toolbox",
       "args": [
         "--prebuilt",
