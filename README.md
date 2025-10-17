@@ -41,11 +41,13 @@ gemini extensions install https://github.com/gemini-cli-extensions/mysql
 
 Set the following environment variables before starting the Gemini CLI. These variables can be loaded from a `.env` file.
 
-* `MYSQL_HOST`: The hostname or IP address of the MySQL server.
-* `MYSQL_PORT`: The port number of the MySQL server.
-* `MYSQL_DATABASE`: The name of the database to connect to.
-* `MYSQL_USER`: The username for authentication.
-* `MYSQL_PASSWORD`: The password for authentication.
+```bash
+export MYSQL_HOST="<your-mysql-host>"
+export MYSQL_PORT="<your-mysql-port>"
+export MYSQL_DATABASE="<your-database-name>"
+export MYSQL_USER="<your-database-user>"
+export MYSQL_PASSWORD="<your-database-password>"
+```
 
 ### Start Gemini CLI
 
