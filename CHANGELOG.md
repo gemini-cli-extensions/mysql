@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/gemini-cli-extensions/mysql/compare/0.1.2...0.1.3) (2025-11-18)
+
+
+### Features
+
+* **source/mysql:** Set default host and port for MySQL source ([genai-toolbox#​1922](https://redirect.github.com/googleapis/genai-toolbox/issues/1922)) ([2c228ef](https://redirect.github.com/googleapis/genai-toolbox/commit/2c228ef4f2d4cb8dfc41e845466bfe3566d141a1)) ([a0d7947](https://github.com/gemini-cli-extensions/mysql/commit/a0d7947a9b5071ee477a01f116abae3b7818f372))
+
 ## [0.1.2](https://github.com/gemini-cli-extensions/mysql/compare/0.1.1...0.1.2) (2025-10-27)
 
 
