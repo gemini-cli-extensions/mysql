@@ -25,7 +25,7 @@
       "envVar": "MYSQL_PORT"
     },
     {
-      "name": "Database Name",
+      "name": "Database",
       "description": "Name of the database",
       "envVar": "MYSQL_DATABASE"
     },
@@ -37,7 +37,8 @@
     {
       "name": "Password",
       "description": "Password of the database user",
-      "envVar": "MYSQL_PASSWORD"
+      "envVar": "MYSQL_PASSWORD",
+      "sensitive": true
     }
   ]
 }
