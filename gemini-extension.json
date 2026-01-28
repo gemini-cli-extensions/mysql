@@ -9,15 +9,36 @@
         "--prebuilt",
         "mysql",
         "--stdio"
-      ],
-      "env": {
-        "MYSQL_HOST": "${MYSQL_HOST}",
-        "MYSQL_PORT": "${MYSQL_PORT}",
-        "MYSQL_DATABASE": "${MYSQL_DATABASE}",
-        "MYSQL_USER": "${MYSQL_USER}",
-        "MYSQL_PASSWORD": "${MYSQL_PASSWORD}"
-      }
+      ]
     }
   },
-  "contextFileName": "MYSQL.md"
+  "contextFileName": "MYSQL.md",
+  "settings": [
+    {
+      "name": "Host",
+      "description": "Host or IP address of the MySQL server",
+      "envVar": "MYSQL_HOST"
+    },
+    {
+      "name": "Port",
+      "description": "Port number of the MySQL server",
+      "envVar": "MYSQL_PORT"
+    },
+    {
+      "name": "Database",
+      "description": "Name of the database",
+      "envVar": "MYSQL_DATABASE"
+    },
+    {
+      "name": "User",
+      "description": "Username of the database user",
+      "envVar": "MYSQL_USER"
+    },
+    {
+      "name": "Password",
+      "description": "Password of the database user",
+      "envVar": "MYSQL_PASSWORD",
+      "sensitive": true
+    }
+  ]
 }
