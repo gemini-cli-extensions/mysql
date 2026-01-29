@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.4](https://github.com/gemini-cli-extensions/mysql/compare/0.1.3...0.1.4) (2026-01-29)
+
+
+### Features
+
+* **tools/mysql-get-query-plan:** Add new `mysql-get-query-plan` tool for MySQL source ([genai-toolbox#​2123](https://redirect.github.com/googleapis/genai-toolbox/issues/2123)) ([0641da0](https://redirect.github.com/googleapis/genai-toolbox/commit/0641da0353857317113b2169e547ca69603ddfde)) ([3506ace](https://github.com/gemini-cli-extensions/mysql/commit/3506ace6e0befd06869da068573fd81b77bec40e))
+* add Configuration settings ([#69](https://github.com/gemini-cli-extensions/mysql/issues/69)) ([fee5c1c](https://github.com/gemini-cli-extensions/mysql/commit/fee5c1c546c5547f6db099fd4178b79b01db0950))
+
+
+### Bug Fixes
+
+* **tools:** Check for query execution error for pgxpool.Pool ([genai-toolbox#​1969](https://redirect.github.com/googleapis/genai-toolbox/issues/1969)) ([2bff138](https://redirect.github.com/googleapis/genai-toolbox/commit/2bff1384a3570ef46bc03ebebc507923af261987)) ([3506ace](https://github.com/gemini-cli-extensions/mysql/commit/3506ace6e0befd06869da068573fd81b77bec40e))
+
 ## [0.1.3](https://github.com/gemini-cli-extensions/mysql/compare/0.1.2...0.1.3) (2025-11-18)
 
 
