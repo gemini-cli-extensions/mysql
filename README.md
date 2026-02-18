@@ -39,7 +39,27 @@ gemini extensions install https://github.com/gemini-cli-extensions/mysql
 
 ### Configuration
 
-Set the following environment variables before starting the Gemini CLI. These variables can be loaded from a `.env` file.
+You will be prompted to configure the following settings during installation. These settings are saved in an `.env` file within the extension's directory.
+
+*   `MYSQL_HOST`: (Optional) The MySQL host. Defaults to `localhost`.
+*   `MYSQL_PORT`: (Optional) The MySQL port. Defaults to `3306`.
+*   `MYSQL_DATABASE`: The name of the database to connect to.
+*   `MYSQL_USER`: The database username.
+*   `MYSQL_PASSWORD`: The password for the database user.
+
+To view or update your configuration:
+
+**List Settings:**
+*   Terminal: `gemini extensions list`
+*   Gemini CLI: `/extensions list`
+
+**Update Settings:**
+*   Terminal: `gemini extensions config mysql [setting name] [--scope <scope>]`
+    *   `setting name`: (Optional) The single setting to configure.
+    *   `scope`: (Optional) The scope of the setting in (`user` or `workspace`). Defaults to `user`.
+*   Currently, you must restart the Gemini CLI for changes to take effect. We recommend using `gemini --resume` to resume your session.
+
+Alternatively, you can manually set these environment variables before starting the Gemini CLI:
 
 ```bash
 export MYSQL_HOST="<your-mysql-host>" # Optional: defaults to localhost
@@ -48,6 +68,9 @@ export MYSQL_DATABASE="<your-database-name>"
 export MYSQL_USER="<your-database-user>"
 export MYSQL_PASSWORD="<your-database-password>"
 ```
+
+> [!NOTE]
+> See [Troubleshooting](#troubleshooting) for debugging your configuration.
 
 ### Start Gemini CLI
 
@@ -94,7 +117,6 @@ Use `gemini --debug` to enable debugging.
 
 Common issues:
 
-* "failed to find default credentials: google: could not find default credentials.": Ensure [Application Default Credentials](https://cloud.google.com/docs/authentication/gcloud) are available in your environment. See [Set up Application Default Credentials](https://cloud.google.com/docs/authentication/external/set-up-adc) for more information.
 * "✖ Error during discovery for server: MCP error -32000: Connection closed": The database connection has not been established. Ensure your configuration is set via environment variables.
 * "✖ MCP ERROR: Error: spawn /Users/USER/.gemini/extensions/mysql/toolbox ENOENT": The Toolbox binary did not download correctly. Ensure you are using Gemini CLI v0.6.0+.
 * "cannot execute binary file": The Toolbox binary did not download correctly. Ensure the correct binary for your OS/Architecture has been downloaded. See [Installing the server](https://googleapis.github.io/genai-toolbox/getting-started/introduction/#installing-the-server) for more information.
