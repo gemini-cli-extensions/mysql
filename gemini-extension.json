@@ -37,8 +37,7 @@
     {
       "name": "Password",
       "description": "Password of the database user",
-      "envVar": "MYSQL_PASSWORD",
-      "sensitive": true
+      "envVar": "MYSQL_PASSWORD"
     }
   ]
 }
