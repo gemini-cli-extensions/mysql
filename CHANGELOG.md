@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/gemini-cli-extensions/mysql/compare/0.1.4...0.1.5) (2026-02-24)
+
+
+### Bug Fixes
+
+* remove broken keychain support for password ([#79](https://github.com/gemini-cli-extensions/mysql/issues/79)) ([78dc9b4](https://github.com/gemini-cli-extensions/mysql/commit/78dc9b4b7161a57d4ca9c5bb25d96c0093978098))
+
 ## [0.1.4](https://github.com/gemini-cli-extensions/mysql/compare/0.1.3...0.1.4) (2026-01-29)
 
 
