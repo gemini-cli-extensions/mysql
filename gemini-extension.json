@@ -4,8 +4,10 @@
   "description": "Connect and interact with a MySQL database and data",
   "mcpServers": {
     "mysql": {
-      "command": "${extensionPath}${/}toolbox",
+      "command": "npx",
       "args": [
+        "-y",
+        "@toolbox-sdk/server@1.8.0",
         "--prebuilt",
         "mysql",
         "--stdio"
