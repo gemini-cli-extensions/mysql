@@ -1,0 +1,16 @@
+{
+  "name": "mysql",
+  "owner": {
+    "name": "Google LLC",
+    "email": "data-cloud-ai-integrations@google.com"
+  },
+  "metadata": {
+    "description": "Connect and interact with a MySQL database and data."
+  },
+  "plugins": [
+    {
+      "name": "mysql",
+      "source": "./"
+    }
+  ]
+}
