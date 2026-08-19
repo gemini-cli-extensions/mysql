@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "mysql": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@toolbox-sdk/server@1.8.0",
+        "--prebuilt",
+        "mysql",
+        "--stdio"
+      ],
+      "env_vars": [
+        "MYSQL_HOST",
+        "MYSQL_PORT",
+        "MYSQL_DATABASE",
+        "MYSQL_USER",
+        "MYSQL_PASSWORD"
+      ]
+    }
+  }
+}

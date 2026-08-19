@@ -22,8 +22,11 @@ This Gemini CLI extension provides a set of tools to interact with [MySQL](https
 
 Before you begin, ensure you have the following:
 
-* [Gemini CLI](https://github.com/google-gemini/gemini-cli) installed with version **+v0.6.0**.
-* Setup Gemini CLI [Authentication](https://github.com/google-gemini/gemini-cli/tree/main?tab=readme-ov-file#-authentication-options).
+* One of the supported agent harnesses, installed and authenticated:
+  * [Gemini CLI](https://github.com/google-gemini/gemini-cli) (v0.6.0+)
+  * [Claude Code](https://code.claude.com)
+  * [Codex](https://developers.openai.com/codex)
+  * [Antigravity CLI](https://antigravity.google)
 * [Node.js](https://nodejs.org/) (the MCP server runs via `npx`).
 * A running MySQL instance.
 * A user with database-level permissions to execute queries.
@@ -32,15 +35,39 @@ Before you begin, ensure you have the following:
 
 ### Installation
 
-To install the extension, use the command:
+All harnesses use the same plugin; the MCP server runs via `npx` (no binary to download). Install with your harness of choice:
+
+**Gemini CLI**
 
 ```bash
 gemini extensions install https://github.com/gemini-cli-extensions/mysql
 ```
 
+**Claude Code**
+
+```bash
+claude plugin marketplace add gemini-cli-extensions/mysql
+claude plugin install mysql@mysql
+```
+
+**Codex**
+
+```bash
+codex plugin marketplace add gemini-cli-extensions/mysql
+codex plugin add mysql@mysql
+```
+
+**Antigravity**
+
+```bash
+agy plugin install https://github.com/gemini-cli-extensions/mysql
+```
+
+See [Configuration](#configuration) for how each harness supplies the connection settings.
+
 ### Configuration
 
-You will be prompted to configure the following settings during installation. These settings are saved in an `.env` file within the extension's directory.
+The plugin connects to MySQL using these settings:
 
 *   `MYSQL_HOST`: (Optional) The MySQL host. Defaults to `localhost`.
 *   `MYSQL_PORT`: (Optional) The MySQL port. Defaults to `3306`.
@@ -48,23 +75,15 @@ You will be prompted to configure the following settings during installation. Th
 *   `MYSQL_USER`: The database username.
 *   `MYSQL_PASSWORD`: The password for the database user.
 
-To view or update your configuration:
+How you supply them depends on the harness:
 
-**List Settings:**
-*   Terminal: `gemini extensions list`
-*   Gemini CLI: `/extensions list`
-
-**Update Settings:**
-*   Terminal: `gemini extensions config mysql [setting name] [--scope <scope>]`
-    *   `setting name`: (Optional) The single setting to configure.
-    *   `scope`: (Optional) The scope of the setting in (`user` or `workspace`). Defaults to `user`.
-*   Currently, you must restart the Gemini CLI for changes to take effect. We recommend using `gemini --resume` to resume your session.
-
-Alternatively, you can manually set these environment variables before starting the Gemini CLI:
+*   **Gemini CLI**: prompted on install and saved to the extension's `.env`. View or update later with `gemini extensions list` / `gemini extensions config mysql [setting] [--scope user|workspace]` (restart the CLI to apply).
+*   **Claude Code**: pass `--config KEY=VALUE` on install (repeatable), or run `/plugin` inside Claude Code.
+*   **Codex** and **Antigravity**: export the variables in your shell before starting:
 
 ```bash
-export MYSQL_HOST="<your-mysql-host>" # Optional: defaults to localhost
-export MYSQL_PORT="<your-mysql-port>" # Optional: defaults to 3306
+export MYSQL_HOST="<your-mysql-host>"       # Optional, defaults to localhost
+export MYSQL_PORT="<your-mysql-port>"       # Optional, defaults to 3306
 export MYSQL_DATABASE="<your-database-name>"
 export MYSQL_USER="<your-database-user>"
 export MYSQL_PASSWORD="<your-database-password>"
