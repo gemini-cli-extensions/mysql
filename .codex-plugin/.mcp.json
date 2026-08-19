@@ -9,7 +9,6 @@
         "mysql",
         "--stdio"
       ],
-      "cwd": "${PLUGIN_ROOT}",
       "env_vars": [
         "MYSQL_HOST",
         "MYSQL_PORT",

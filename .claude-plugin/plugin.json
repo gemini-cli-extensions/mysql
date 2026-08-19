@@ -56,8 +56,7 @@
         "MYSQL_DATABASE": "${user_config.mysql_database}",
         "MYSQL_USER": "${user_config.mysql_user}",
         "MYSQL_PASSWORD": "${user_config.mysql_password}"
-      },
-      "cwd": "${CLAUDE_PLUGIN_ROOT}"
+      }
     }
   }
 }

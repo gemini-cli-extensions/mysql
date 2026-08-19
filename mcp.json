@@ -10,8 +10,7 @@
         "--prebuilt",
         "mysql",
         "--stdio"
-      ],
-      "cwd": "${PLUGIN_ROOT}"
+      ]
     }
   }
 }
