@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.6](https://github.com/gemini-cli-extensions/mysql/compare/0.1.5...0.1.6) (2026-08-21)
+
+
+### Features
+
+* adopt Agent Plugin spec and generate harness manifests ([#90](https://github.com/gemini-cli-extensions/mysql/issues/90)) ([8beae59](https://github.com/gemini-cli-extensions/mysql/commit/8beae59523a0554cd49dbd9831ad3ac50d1a5f68))
+* **deps:** update dependency @toolbox-sdk/server to v1.9.0 ([#91](https://github.com/gemini-cli-extensions/mysql/issues/91)) ([a097b9e](https://github.com/gemini-cli-extensions/mysql/commit/a097b9e8aa28f9665abbcccb0862791387110e50))
+
 ## [0.1.5](https://github.com/gemini-cli-extensions/mysql/compare/0.1.4...0.1.5) (2026-02-24)
 
 
