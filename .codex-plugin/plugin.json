@@ -1,6 +1,6 @@
 {
   "name": "mysql",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Connect and interact with a MySQL database and data",
   "author": {
     "name": "Google LLC",
