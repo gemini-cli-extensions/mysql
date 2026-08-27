@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.7](https://github.com/gemini-cli-extensions/mysql/compare/0.1.6...0.1.7) (2026-08-27)
+
+
+### Features
+
+* restore $schema in plugin.json for spec clients ([#94](https://github.com/gemini-cli-extensions/mysql/issues/94)) ([d072c37](https://github.com/gemini-cli-extensions/mysql/commit/d072c373ac04620703e9de51feff21a37aeb2acf))
+
 ## [0.1.6](https://github.com/gemini-cli-extensions/mysql/compare/0.1.5...0.1.6) (2026-08-21)
 
 
